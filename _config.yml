@@ -1,0 +1,17 @@
+# Basic Jekyll configuration for GitHub Pages
+# You can customize these values as needed
+
+title: "My Portfolio"
+description: "A personal portfolio site."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://cornell-mae-ug.github.io/portfolio-sp26-sp26-portfolio-portolios-1" # your GitHub Pages URL
+
+# Exclude these files/folders from the site build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+# Build settings
+markdown: kramdown
+theme: minima
