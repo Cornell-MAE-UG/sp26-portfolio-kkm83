@@ -1,45 +1,48 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
+# =====================
+# SP26 Portfolio Config
+# =====================
 
+# Site settings
+title: "Kai Miller Portfolio"
+description: "Kai Miller Portfolio"
+author: "kkm83"
 
-# Site Settings
-locale                   : "en-US"
-title                    : Kai Miller
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : Kai Miller
-description              : Kai Miller - Projects and Resume 
-baseurl                  : "" # Set this to your repo name 
+# GitHub Pages settings
+url: "https://cornell-mae-ug.github.io"  # Organization GitHub Pages URL
+baseurl: "/sp26-portfolio-kkm83"         # Must match your repository name
 
-# Theme and Style
-theme: jekyll-theme-minimal
-color_scheme: light # light/default, dark, or aqua
-
-sass:
-  style: compressed
-
-# Outputting
-permalink: /:categories/:title/
-
-collections:
-  pages:
-    output: true
-  projects:
-    output: true
-    permalink: /:collection/:path/
-
-# Markdown
+# Markdown and theme
 markdown: kramdown
-kramdown:
-  input: GFM
+theme: minima
 
-# Plugins (previously gems:)
+# Plugins
 plugins:
   - jekyll-feed
-  - jekyll-include-cache
-  - jekyll-seo-tag
 
+# Navigation menu
+nav:
+  - title: "Home"
+    url: "/"
+  - title: "Projects"
+    url: "/projects/"
+
+# Exclude files/folders from the build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+# =====================
+# Usage Notes
+# =====================
+# 1. All internal links and images should use `{{ site.baseurl }}`
+#    Example:
+#      <a href="{{ site.baseurl }}/projects/project1/">Project 1</a>
+#      <img src="{{ site.baseurl }}/assets/images/pic.png" />
+#
+# 2. After saving this file, run locally:
+#      bundle install
+#      bundle exec jekyll serve
+#    Open http://127.0.0.1:4000/{{ site.baseurl }}/ in your browser
+#
+# 3. Push changes to GitHub and enable Pages from the 'main' branch
