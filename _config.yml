@@ -22,9 +22,9 @@ plugins:
 # Navigation menu
 nav:
   - title: "Home"
-    url: "/"
+    url: "{{ site.baseurl }}/"
   - title: "Projects"
-    url: "/projects/"
+    url: "{{ site.baseurl }}/projects/"
 
 # Exclude files/folders from the build
 exclude:
